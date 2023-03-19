@@ -17,8 +17,30 @@
       {
         "command": "chatgpt.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "chatgpt.prompt",
+        "title": "Prompt ChatGPT"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "chatgpt.prompt",
+          "when": "editorHasSelection && !isInDiffEditor"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "ChatGPT",
+      "properties": {
+        "chatgpt.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API Key for ChatGPT"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
