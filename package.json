@@ -3,6 +3,7 @@
   "displayName": "chatgpt",
   "description": "An extension to call ChatGPT from VSCode.",
   "version": "0.0.1",
+  "publisher": "takagimeow",
   "engines": {
     "vscode": "^1.76.0"
   },
